@@ -1,11 +1,12 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 class Users extends React.Component {
   render() {
     return (
+
       <div>
-        TEST
-        <a>{this.props.name}</a>
+        <p>{this.props.name}</p>
       </div>
       )
     }

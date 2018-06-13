@@ -1,5 +1,6 @@
 import React from "react"
 import Users from "./users"
+import Todo from "./todo"
 
 class Todos extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class Todos extends React.Component {
      return (
        <div>
          {this.state.todos.map((user) => {
-           return <Users
+           return <Todo
                 key={user.id}
                name={user.name} />
          })}
