@@ -26,7 +26,6 @@ class HomeView extends React.Component {
                 key={user.id}
                name={user.name} />
          })}
-         <Todos/>
        </div>
      )
    }

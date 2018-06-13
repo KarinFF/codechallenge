@@ -6,7 +6,8 @@ class Todo extends React.Component {
   render() {
      return (
        <div>
-         {this.props.name}
+         <p>{this.props.name}</p>
+         <p>{this.props.title}</p>
        </div>
      )
    }

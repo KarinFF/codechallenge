@@ -1,12 +1,14 @@
 import React from "react"
-import Users from "./users"
 import Todo from "./todo"
+import Users from "./users"
 
 class Todos extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      todos: []
+      todos: [],
+      usersList: [
+      ]
     }
   }
 
@@ -16,16 +18,25 @@ class Todos extends React.Component {
   )).then(json => {
     this.setState({ todos: json })
   })
+  fetch("https://jsonplaceholder.typicode.com/users").then(response => (
+    response.json()
+  )).then(json => {
+    this.setState({ usersList: [] })
+  })
 }
 
   render() {
      return (
        <div>
-         {this.state.todos.map((user) => {
+         {this.state.todos.map((todos) => {
            return <Todo
-                key={user.id}
-               name={user.name} />
+                key={todos.id}
+                user={todos.userId}
+                title={todos.title}
+                name={this.state.name}
+                />
          })}
+
        </div>
      )
    }
