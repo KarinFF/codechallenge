@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.nav {
+  background: #8806;
+}
+.nav a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 50%;
+}

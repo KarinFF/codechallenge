@@ -5,8 +5,7 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div>
-        <div >
+      <div className="nav">
           <ul>
             <li>
               <Link to="/">
@@ -19,7 +18,6 @@ class Nav extends React.Component {
               </Link>
             </li>
           </ul>
-        </div>
       </div>
     )
   }

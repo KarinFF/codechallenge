@@ -1,8 +1,10 @@
 import React from "react"
+import {BrowserRouter, Route} from "react-router-dom"
 import Todos from "./todos"
 import HomeView from "./homeview"
 import Nav from "./nav"
-import {BrowserRouter, Route} from "react-router-dom"
+import "./app.css"
+
 
 class App extends React.Component {
 
