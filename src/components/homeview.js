@@ -20,7 +20,8 @@ class HomeView extends React.Component {
 
   render() {
      return (
-       <div>
+       <div className="textstyle">
+         <h2>Users</h2>
          {this.state.users.map((user) => {
            return <Users
                 key={user.id}

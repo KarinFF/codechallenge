@@ -27,7 +27,8 @@ class Todos extends React.Component {
 
   render() {
      return (
-       <div>
+       <div className="textstyle">
+         <h2>Todos</h2>
          {this.state.todos.map((todos) => {
            return <Todo
                 key={todos.id}

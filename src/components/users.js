@@ -5,7 +5,7 @@ class Users extends React.Component {
   render() {
     return (
 
-      <div>
+      <div className="textstyle">
         <p>{this.props.name}</p>
       </div>
       )

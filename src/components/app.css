@@ -2,14 +2,29 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #86309eb8;
+}
 
 .nav {
-  background: #8806;
+  background: #a33dbff7;
+  font-family: monospace;
+  font-size: 20px;
 }
 .nav a {
   text-decoration: none;
+  list-style-type: none;
 }
 
 ul {
   padding-left: 50%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.textstyle {
+  font-family: monospace;
+
 }
